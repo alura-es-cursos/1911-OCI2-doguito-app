@@ -58,7 +58,7 @@ const atualizaCliente = (id, nome, email) => {
             'Content-type': 'application/json'
         },
         body: JSON.stringify({
-            nome: nome,
+            nombre: nome,
             email: email
         })
     })
