@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doguito Petshop | Registro de cliente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/cadastra_cliente.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="../assets/img/doguitoadm.svg" alt="Logo Doguito" class="cabecalho__logo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="#">Productos</a></li>
+                <li class="cabecalho__link"><a href="lista_cliente.html">Clientes </a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Nuevo Cliente</h1>
+            <form class="flex flex--coluna" data-form>
+                <div class="input-container">
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Nombre" required data-nome>
+                    <label class="input-label" for="nome">Nombre</label>
+                    <span class="input-mensagem-erro">Campo requerido</span>
+                </div>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="text" placeholder="Email" required data-email>
+                    <label class="input-label" for="email" >Email</label>
+                    <span class="input-mensagem-erro">Campo requerido</span>
+                </div>
+                <button type="submit"class="botao">
+                Registrar
+            </button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="../controller/cadastraClientes-controller.js"></script>
+</body>
+
+
+</html>
